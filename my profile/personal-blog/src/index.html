@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- Add Favicon -->
+    <link rel="icon" href="assets/pk.jpg" type="image/jpeg">
+        
+        
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li> 
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome" class="welcome-section">
+            <div class="welcome-content">
+                <h1><i>Welcome to My Portfolio</i></h1>
+                <div class="effects-container">
+                  <div class="fire"></div>
+                  <div class="bubble"></div>
+                  <div class="bubble bubble2"></div>
+                  <div class="bubble bubble3"></div>
+                  <div class="bubble bubble4"></div>
+                  <div class="bubble bubble5"></div>
+                  <div class="bubble bubble6"></div>
+                </div>
+                <p>Hi, I'm <strong>Bernard Lusale</strong>. This is where I share my journey as a <strong>Software Engineer</strong>, <strong>Cybersecurity Analyst</strong>, and <strong>Tech Enthusiast</strong>. Explore my projects, read my thoughts on technology, and feel free to connect with me!</p>
+                <!-- "Learn More About Me" button -->
+<a href="#about" class="welcome-button transparent-button">Learn More About Me</a>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <h2>Blog Posts</h2>
+            <div class="blog-container">
+                <div class="blog-post">
+                    <img src="assets/blog-thumbnails/digital-vision.jpg" alt="Digital and Vision Thumbnail">
+                    <div class="blog-content">
+                        <h3><i class="fas fa-laptop"></i> Digital and Vision technologies</h3> <!-- Laptop Icon -->
+                        <p class="tags">Tags:Software engineering,Ai</p>
+                        <p></p>
+                        <ul>
+                            <li>Loading...</li>
+                        </ul>
+                        <button id="toggle-digital-vision" class="toggle-button">Show More</button>
+                        <div id="digital-vision-details" style="display: none;">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog-post">
+                    <img src="assets/blog-thumbnails/cybersecurity.jpg" alt="Cybersecurity Thumbnail">
+                    <div class="blog-content">
+                        <h3><i class="fas fa-lock"></i> Cybersecurity</h3> <!-- Lock Icon -->
+                        <p class="tags">Tags: Cybersecurity, AI</p>
+                        <p>Loading...</p>
+                        <button id="toggle-cybersecurity" class="toggle-button">Show More</button>
+                        <div id="cybersecurity-details" style="display: none;">
+                            <p>Loading...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <div class="portfolio-container">
+                <div class="portfolio-item">
+                    <h3><i class="fas fa-project-diagram"></i> Project 1</h3> <!-- Project Icon -->
+                    <p>Loading...
+                        
+                    </p>
+                </div>
+                <div class="portfolio-item">
+
+                    <h3><i class="fas fa-project-diagram"></i> Project 2</h3> 
+                    <p>Loading...
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About and Contact Section -->
+        <div class="about-contact-container">
+            <!-- About Me Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <button id="toggle-about" class="toggle-button transparent-button">Show About Me</button>
+                <div class="about-container" style="display: none;">
+                    <img src="assets/pk.jpg" alt="Profile Picture" class="profile-picture">
+                    <div class="about-content">
+                        <p>Hello! I'm <strong>Bernard Lusale</strong>, a computer science student, a passionate <strong>Software Engineer</strong>, <strong>Cybersecurity Analyst</strong>, and <strong>Tech Founder</strong>. I specialize in building innovative solutions like <em>IQ Insight</em> and <em>Water Quality Monitor</em>. My mission is to create impactful technology that solves real-world problems and empowers communities.</p>
+                        <p>I'm willing to learn more from different sources by delivering high-quality solutions that make a difference. Let's connect and collaborate to bring ideas to life!</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <!-- "Contact Me" toggle button -->
+                <button id="toggle-contact" class="toggle-button transparent-button">Show Contact Me</button>
+                <div class="contact-container" style="display: none;">
+                    <p>If you'd like to get in touch, please fill out the form below:</p>
+                    <form>
+                        <label for="name"><i class="fas fa-user"></i> Name:</label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                        <label for="message"><i class="fas fa-comment-dots"></i> Message:</label><br>
+                        <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea><br><br>
+
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- CV Section -->
+        <section id="cv">
+            <h2>Curriculum Vitae</h2>
+            <p><i>Download my CV </i><a href="Bernard_Lusale_CV%2012.pdf" download>here</a>.</p>
+        </section>
+    </main>
+
+   <footer>
+    <p>&copy; 2025 My portfolio. All rights reserved.</p>
+    <p>
+        <a href="mailto:bernardlusale20@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/bernard-lusale-631b9b31a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BESrNOfcfQBK0eQ0PLqrgbQ%3D%3D"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Bernardlusale"><i class="fab fa-github"></i></a>
+    </p>
+</footer>
+
+    <script src="js/script.js"></script>
+    <script>
+document.querySelectorAll('.fire, .bubble, .bubble2').forEach(el => {
+  el.addEventListener('click', function() {
+    this.classList.add('popped');
+    setTimeout(() => {
+      this.classList.remove('popped');
+    }, 400);
+  });
+});
+</script>
+</body>
+</html>
